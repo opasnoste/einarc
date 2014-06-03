@@ -110,3 +110,4 @@ RPM creation for CentOS
 Ref:
 * <http://it.kuchuk.net/2013/06/installing-checkinstall-for-centos.html>
 * <http://www.patrickmin.com/linux/tip.php?name=checkinstall>
+* <http://www.inquisitor.ru/doc/einarc/xhtml/manual.html>
