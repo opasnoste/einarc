@@ -99,14 +99,14 @@ See reference manual for general usage recommendations.
 RPM creation for CentOS
 -------------
 
-`rpm -ivh ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/andnagy/RedHat_RHEL-6/x86_64/checkinstall-1.6.2-20.2.x86_64.rpm`
-`yum install rpm-build rpmdevtools`
-`rpmdev-setuptree`
-edit  `/etc/checkinstallrc` with `TRANSLATE=0`
-`./configure --modules=lsi_megarc,amcc,lsi_megacli`
-`make`
-`checkinstall --exclude=/selinux,/selinux/context -R --pkgversion=2.0.2 --requires="ruby"`
+* `rpm -ivh ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/andnagy/RedHat_RHEL-6/x86_64/checkinstall-1.6.2-20.2.x86_64.rpm`
+* `yum install rpm-build rpmdevtools`
+* `rpmdev-setuptree`
+* edit  `/etc/checkinstallrc` with `TRANSLATE=0`
+* `./configure --modules=lsi_megarc,amcc,lsi_megacli`
+* `make`
+* `checkinstall --exclude=/selinux,/selinux/context -R --pkgversion=2.0.2 --requires="ruby"`
 
 Ref:
-<http://it.kuchuk.net/2013/06/installing-checkinstall-for-centos.html>
-<http://www.patrickmin.com/linux/tip.php?name=checkinstall>
+* <http://it.kuchuk.net/2013/06/installing-checkinstall-for-centos.html>
+* <http://www.patrickmin.com/linux/tip.php?name=checkinstall>
