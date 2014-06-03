@@ -27,9 +27,9 @@ install:
 	if test -r config.rb; then cp config.rb $(DESTDIR)$(EINARC_VAR_DIR); fi
 	if test -r proprietary/agreed; then mkdir -p $(DESTDIR)$(EINARC_VAR_DIR)/proprietary && cp proprietary/agreed $(DESTDIR)$(EINARC_VAR_DIR)/proprietary; fi
 	if test -d tools; then cp -r tools/* $(DESTDIR)$(EINARC_LIB_DIR); fi
-	if test -d tools/lsi_megacli; then ln -s $(DESTDIR)$(EINARC_LIB_DIR)/lsi_megacli/cli /usr/local/bin/megacli; fi
-	if test -d tools/lsi_megarc; then ln -s $(DESTDIR)$(EINARC_LIB_DIR)/lsi_megarc/cli /usr/local/bin/mpt-status; fi
-	if test -d tools/amcc; then ln -s $(DESTDIR)$(EINARC_LIB_DIR)/amcc/cli /usr/local/bin/tw_cli; fi
+	if test -d tools/lsi_megacli; then ln -s $(DESTDIR)$(EINARC_LIB_DIR)/lsi_megacli/cli $(BIN_DIR)/megacli; fi
+	if test -d tools/lsi_megarc; then ln -s $(DESTDIR)$(EINARC_LIB_DIR)/lsi_megarc/cli $(BIN_DIR)/mpt-status; fi
+	if test -d tools/amcc; then ln -s $(DESTDIR)$(EINARC_LIB_DIR)/amcc/cli $(BIN_DIR)/tw_cli; fi
 #	if File.exists?('ext/lsi_mpt.so')
 #		mkdir_p INSTALL_DIR_PREFIX + LIB_DIR
 #		cp 'ext/lsi_mpt.so', INSTALL_DIR_PREFIX + LIB_DIR
