@@ -103,9 +103,11 @@ RPM creation for CentOS
 * `yum install rpm-build rpmdevtools`
 * `rpmdev-setuptree`
 * edit  `/etc/checkinstallrc` with `TRANSLATE=0`
-* `./configure --modules=lsi_megarc,amcc,lsi_megacli`
+* `./configure --modules=lsi_megarc,adaptec_arcconf,areca,amcc,lsi_megacli,adaptec_aaccli`
 * `make`
-* `checkinstall --exclude=/selinux,/selinux/context -R --pkgversion=2.0.2 --requires="ruby"`
+* `checkinstall --exclude=/selinux,/selinux/context -R --pkgversion=2.0 --requires="ruby,ncurses-libs"`
+
+RPM also depends of ncurses-libs.i686 and glibc.i686 even on x64 systems because of binary blobs!
 
 Ref:
 * <http://it.kuchuk.net/2013/06/installing-checkinstall-for-centos.html>
