@@ -104,6 +104,7 @@ RPM creation for CentOS
 * `rpmdev-setuptree`
 * edit  `/etc/checkinstallrc` with `TRANSLATE=0`
 * `./configure --modules=lsi_megarc,adaptec_arcconf,areca,amcc,lsi_megacli,adaptec_aaccli`
+* Or `./configure --modules=lsi_megarc,adaptec_arcconf,areca,amcc,lsi_megacli` - for CentOS 5
 * `make`
 * `checkinstall --exclude=/selinux,/selinux/context -R --pkgversion=2.0 --requires="ruby,ncurses-libs"`
 
